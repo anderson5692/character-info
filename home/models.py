@@ -7,7 +7,7 @@ class Personagem(models.Model):
     Espécie = models.CharField(max_length=255)
     Gênero = models.CharField(max_length=255)
     Ocupação = models.CharField(max_length=255)
-    Descrição = models.TextField(max_length=255)
+    Descrição = models.TextField(max_length=999)
 
     def __str__(self):
         return self.Nome
