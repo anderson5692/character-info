@@ -8,24 +8,13 @@
 </head>
 <body>
     <h1>Lista de Personagens</h1>
-    <table>
     <tr>
         <th>Nome</th>
         <th>Idade</th>
         <th>Espécie</th>
         <th>Ocupação</th>
     </tr>
-    {% block conteudo %} {% endblock %}
 
-    
-</table>-->
-
-</body>
-</html>
-
-
-
-<!--
     <ul>
         <li>
             <a href="{%url 'info' personagem.Nome %}">{{ personagem.Nome }}>
@@ -36,4 +25,27 @@
             </a>
         </li>
     </ul>
--->
+    
+    
+    
+    <!--<table>
+        {% block conteudo %} {% endblock %}
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Espécie</th>
+            <th>Ocupação</th>
+        </tr>
+    {% for personagem in personagens %}
+        <tr>
+            <td>
+                <a href="{%url 'info' personagem.Nome %}">{{ personagem.Nome }}</a>
+            </td>
+            <td>{{ personagem.Idade }}</td>
+            <td>{{ personagem.Espécie }}</td>
+            <td>{{ personagem.Ocupação }}</td>
+        </tr>
+    {% endfor %}
+    </table>-->
+</body>
+</html>
