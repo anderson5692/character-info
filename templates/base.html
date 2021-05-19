@@ -1,14 +1,14 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <title>Adventure Time</title>
     {% include 'parciais/head.html' %}
 </head>
 <body>
-    <h1>Lista de Personagens</h1>
-    <table>
+<h1>Lista de Personagens</h1>
+<table>
     <tr>
         <th>Nome</th>
         <th>Idade</th>
@@ -16,24 +16,6 @@
         <th>Ocupação</th>
     </tr>
     {% block conteudo %} {% endblock %}
-
-    
-</table>-->
-
+</table>
 </body>
 </html>
-
-
-
-<!--
-    <ul>
-        <li>
-            <a href="{%url 'info' personagem.Nome %}">{{ personagem.Nome }}>
-                <figure>
-                    <img src="{% static 'finn.png' %}">
-                    <figcaption>Finn</figcaption>
-                </figure>
-            </a>
-        </li>
-    </ul>
--->
