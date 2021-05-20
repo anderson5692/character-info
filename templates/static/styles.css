@@ -5,12 +5,11 @@ background-attachment: fixed;
 background-size: cover;
 }
 
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+.chars {
+    grid-gap: 20px;
+    border-bottom: 1px solid;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0;
+    padding-bottom: 40px;
 }

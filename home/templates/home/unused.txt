@@ -1,0 +1,10 @@
+{% for personagem in personagens %}
+<tr>
+    <td>
+        <a href="{%url 'info' personagem.Nome %}">{{ personagem.Nome }}</a>
+    </td>
+    <td>{{ personagem.Idade }}</td>
+    <td>{{ personagem.Espécie }}</td>
+    <td>{{ personagem.Ocupação }}</td>
+</tr>
+{% endfor %}

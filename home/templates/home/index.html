@@ -1,16 +1,93 @@
 {% extends 'base.html' %}
 {% block conteudo %}
+{% load static %}
+<div class="main-body">
+    <div class="content">
+        <ul class="chars">
+            <li class="finn">
+                <a href="/Finn.html">
+                    <figure>
+                        <img src="{% static 'finn.png' %}">
+                        <figcaption>Finn</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="jake">
+                <a>
+                    <figure>
+                        <img src="{% static 'jake.png' %}">
+                        <figcaption>Jake</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="marceline">
+                <a>
+                    <figure>
+                        <img src="{% static 'marceline.png' %}">
+                        <figcaption>Marceline</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="caroco">
+                <a>
+                    <figure>
+                        <img src="{% static 'princesacaroço.png' %}">
+                        <figcaption>Princesa Caroço</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="jujuba">
+                <a>
+                    <figure>
+                        <img src="{% static 'princesajujuba.png' %}">
+                        <figcaption>Princesa Jujuba</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="fogo">
+                <a>
+                    <figure>
+                        <img src="{% static 'princesadefogo.png' %}">
+                        <figcaption>Princesa de Fogo</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="bmo">
+                <a>
+                    <figure>
+                        <img src="{% static 'bmo.png' %}">
+                        <figcaption>B.M.O</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="ladyiris">
+                <a>
+                    <figure>
+                        <img src="{% static 'ladyiris.png' %}">
+                        <figcaption>Lady Íris</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="reigelado">
+                <a>
+                    <figure>
+                        <img src="{% static 'reigelado.png' %}">
+                        <figcaption>Rei Gelado</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="lich">
+                <a>
+                    <figure>
+                        <img src="{% static 'lich.png' %}" >
+                        <figcaption>Lich</figcaption>
+                    </figure>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
 
-{% for personagem in personagens %}
-<tr>
-    <td>
-        <a href="{%url 'info' personagem.Nome %}">{{ personagem.Nome }}</a>
-    </td>
-    <td>{{ personagem.Idade }}</td>
-    <td>{{ personagem.Espécie }}</td>
-    <td>{{ personagem.Ocupação }}</td>
-</tr>
-{% endfor %}
 {% endblock %}
     
 
