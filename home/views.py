@@ -6,6 +6,7 @@ def index (request):
     return render(request, 'home/index.html', {
         'personagens': personagens
     })
+
 """
 def info_personagem (request, personagem_Nome):
     # info = Personagem.objects.get(Nome=personagem_Nome)
