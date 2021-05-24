@@ -4,10 +4,24 @@ background-color: #ffffff;
 background-attachment: fixed;
 background-size: cover;
 }
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.content {
+    background-color:#ffffff;
+}
 
 .chars {
     grid-gap: 20px;
-    border-bottom: 1px solid;
+    border-bottom: 1px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     margin: 0;

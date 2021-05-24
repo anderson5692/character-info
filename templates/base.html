@@ -1,14 +1,16 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <title>Adventure Time</title>
     {% include 'parciais/head.html' %}
 </head>
-<body>
-<h1>Lista de Personagens</h1><br>
 
+<body>
+    <img class="logo" src="{% static 'logo.png' %}" alt="logo do Adventure Time"></br>
     {% block conteudo %} {% endblock %}
-</table>
+    </table>
 </body>
+
 </html>
