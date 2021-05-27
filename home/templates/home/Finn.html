@@ -1,11 +1,22 @@
+{% include 'parciais/char_info.html' %}
+<h1>{{ personagens.Nome }}</h1>
+        <dl>
+          <dt>Idade</dt>
+          <dd>{{ personagens.Idade }}</dd>
 
-<ul>
-    <li>
-        <a href="url 'info' personagem.Nome ">{{ personagem.Nome }}</a>
-            <figure>
-                <img src=" static 'finn.png' " alt="finn">
-                <figcaption>Finn</figcaption>
-            </figure>
+          <dt>Espécie</dt>
+          <dd>{{ Espécie. }}</dd>
 
-    </li>
-</ul>
+          <dt>Gênero</dt>
+          <dd>{{ personagens.Gênero }}</dd>
+
+          <dt>Ocupação</dt>
+          <dd>{{ personagens.Ocupação }}</dd>
+
+          <dt>Descrição</dt>
+          <dd>
+            {{ personagens.Descrição }}
+          </dd>
+        </dl>
+
+
