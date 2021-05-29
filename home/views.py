@@ -10,7 +10,7 @@ def index(request):
 
 
 def Finn(request):
-    personagens = Personagem.objects.all()
+    personagens = Personagem.objects.get(Nome='Finn')
     return render(request, 'home/Finn.html', {
         'personagens': personagens
     })
