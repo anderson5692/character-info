@@ -1,12 +1,25 @@
 {% include 'parciais/char_info.html' %}
-{{ personagens.Nome }}
-Idade
-{{ personagens.Idade }}
-Espécie
-{{ Espécie. }}
-Gênero
-{{ personagens.Gênero }}
-Ocupação
-{{ personagens.Ocupação }}
-Descrição
-{{ personagens.Descrição }}
+{% block informações %}
+{% load static %}
+
+<h1>{{ personagens.Nome }}</h1>
+<dl>
+  <dt>Idade</dt>
+  <dd>{{ personagens.Idade }}</dd>
+
+  <dt>Espécie</dt>
+  <dd>{{ personagens.Espécie }}</dd>
+
+  <dt>Gênero</dt>
+  <dd>{{ personagens.Gênero }}</dd>
+
+  <dt>Ocupação</dt>
+  <dd>{{ personagens.Ocupação }}</dd>
+
+  <dt>Descrição</dt>
+  <dd>
+    {{ personagens.Descrição }}
+  </dd>
+</dl>
+
+{% endblock %}

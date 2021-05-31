@@ -10,70 +10,70 @@ def index(request):
 
 
 def Finn(request):
-    personagens = Personagem.objects.get(Nome='Finn')
+    personagens = Personagem.objects.get(id=1)
     return render(request, 'home/Finn.html', {
         'personagens': personagens
     })
 
 
 def Jake(request):
-    personagens = Personagem.objects.all()
+    personagens = Personagem.objects.get(id=2)
     return render(request, 'home/Finn.html', {
         'personagens': personagens
     })
 
 
 def Marceline(request):
-    personagens = Personagem.objects.all()
+    personagens = Personagem.objects.get(id=3)
     return render(request, 'home/Finn.html', {
         'personagens': personagens
     })
 
 
 def Princesacaroco(request):
-    personagens = Personagem.objects.all()
+    personagens = Personagem.objects.get(id=10)
     return render(request, 'home/Finn.html', {
         'personagens': personagens
     })
 
 
 def Princesajujuba(request):
-    personagens = Personagem.objects.all()
+    personagens = Personagem.objects.get(id=4)
     return render(request, 'home/Finn.html', {
         'personagens': personagens
     })
 
 
 def Princesadefogo(request):
-    personagens = Personagem.objects.all()
+    personagens = Personagem.objects.get(id=5)
     return render(request, 'home/Finn.html', {
         'personagens': personagens
     })
 
 
 def BMO(request):
-    personagens = Personagem.objects.all()
+    personagens = Personagem.objects.get(id=9)
     return render(request, 'home/Finn.html', {
         'personagens': personagens
     })
 
 
 def Ladyiris(request):
-    personagens = Personagem.objects.all()
+    personagens = Personagem.objects.get(id=8)
     return render(request, 'home/Finn.html', {
         'personagens': personagens
     })
 
 
 def Reigelado(request):
-    personagens = Personagem.objects.all()
+    personagens = Personagem.objects.get(id=7)
     return render(request, 'home/Finn.html', {
         'personagens': personagens
     })
 
 
 def Lich(request):
-    personagens = Personagem.objects.all()
+    personagens = Personagem.objects.get(id=6)
     return render(request, 'home/Finn.html', {
         'personagens': personagens
     })
