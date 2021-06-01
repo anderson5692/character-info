@@ -10,75 +10,76 @@ def index(request):
 
 
 def Finn(request):
-    personagens = Personagem.objects.get(id=1)
+    personagens = get_object_or_404(Personagem, id=1)
     return render(request, 'home/Finn.html', {
         'personagens': personagens
     })
 
 
 def Jake(request):
-    personagens = Personagem.objects.get(id=2)
-    return render(request, 'home/Finn.html', {
+    personagens = get_object_or_404(Personagem, id=2)
+    return render(request, 'home/Jake.html', {
         'personagens': personagens
     })
 
 
 def Marceline(request):
-    personagens = Personagem.objects.get(id=3)
+    personagens = get_object_or_404(Personagem, id=3)
     return render(request, 'home/Finn.html', {
         'personagens': personagens
     })
 
 
 def Princesacaroco(request):
-    personagens = Personagem.objects.get(id=10)
+    personagens = get_object_or_404(Personagem, id=10)
     return render(request, 'home/Finn.html', {
         'personagens': personagens
     })
 
 
 def Princesajujuba(request):
-    personagens = Personagem.objects.get(id=4)
+    personagens = get_object_or_404(Personagem, id=4)
     return render(request, 'home/Finn.html', {
         'personagens': personagens
     })
 
 
 def Princesadefogo(request):
-    personagens = Personagem.objects.get(id=5)
+    personagens = get_object_or_404(Personagem, id=5)
     return render(request, 'home/Finn.html', {
         'personagens': personagens
     })
 
 
 def BMO(request):
-    personagens = Personagem.objects.get(id=9)
+    personagens = get_object_or_404(Personagem, id=9)
     return render(request, 'home/Finn.html', {
         'personagens': personagens
     })
 
 
 def Ladyiris(request):
-    personagens = Personagem.objects.get(id=8)
+    personagens = get_object_or_404(Personagem, id=8)
     return render(request, 'home/Finn.html', {
         'personagens': personagens
     })
 
 
 def Reigelado(request):
-    personagens = Personagem.objects.get(id=7)
+    personagens = get_object_or_404(Personagem, id=7)
     return render(request, 'home/Finn.html', {
         'personagens': personagens
     })
 
 
 def Lich(request):
-    personagens = Personagem.objects.get(id=6)
+    personagens = get_object_or_404(Personagem, id=6)
     return render(request, 'home/Finn.html', {
         'personagens': personagens
     })
 
 
+# personagens = Personagem.objects.get(id=6) - substituido pelo "get_object_or_404"
 """
 def info_personagem (request, personagem_Nome):
     # info = Personagem.objects.get(Nome=personagem_Nome)

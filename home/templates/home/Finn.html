@@ -2,24 +2,22 @@
 {% block informações %}
 {% load static %}
 
-<h1>{{ personagens.Nome }}</h1>
-<dl>
-  <dt>Idade</dt>
-  <dd>{{ personagens.Idade }}</dd>
-
-  <dt>Espécie</dt>
-  <dd>{{ personagens.Espécie }}</dd>
-
-  <dt>Gênero</dt>
-  <dd>{{ personagens.Gênero }}</dd>
-
-  <dt>Ocupação</dt>
-  <dd>{{ personagens.Ocupação }}</dd>
-
-  <dt>Descrição</dt>
-  <dd>
-    {{ personagens.Descrição }}
-  </dd>
-</dl>
+<div class="char-bio">
+    <h1>{{ personagens.Nome }}</h1>
+    <b>Idade:</b>
+    <span>{{ personagens.Idade }}</span>
+    <br>
+    <b>Espécie:</b>
+    <span>{{ personagens.Espécie }}</span>
+    <br>
+    <b>Gênero:</b>
+    <span>{{ personagens.Gênero }}</span>
+    <br>
+    <b>Ocupação:</b>
+    <span>{{ personagens.Ocupação }}</span>
+    <br>
+    <b>Descrição:</b>
+    <span>{{ personagens.Descrição }}</span>
+</div>
 
 {% endblock %}

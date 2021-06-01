@@ -13,6 +13,5 @@ urlpatterns = [
     path('Ladyiris', views.Ladyiris, name='Ladyiris'),
     path('Reigelado', views.Reigelado, name='Reigelado'),
     path('Lich', views.Lich, name='Lich'),
-    # path('<str:personagem_Nome>', views.info_personagem, name='info'),
 ]
 
