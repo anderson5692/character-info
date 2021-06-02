@@ -25,56 +25,56 @@ def Jake(request):
 
 def Marceline(request):
     personagens = get_object_or_404(Personagem, id=3)
-    return render(request, 'home/Finn.html', {
+    return render(request, 'home/Marceline.html', {
         'personagens': personagens
     })
 
 
 def Princesacaroco(request):
     personagens = get_object_or_404(Personagem, id=10)
-    return render(request, 'home/Finn.html', {
+    return render(request, 'home/Princesacaroco.html', {
         'personagens': personagens
     })
 
 
 def Princesajujuba(request):
     personagens = get_object_or_404(Personagem, id=4)
-    return render(request, 'home/Finn.html', {
+    return render(request, 'home/Princesajujuba.html', {
         'personagens': personagens
     })
 
 
 def Princesadefogo(request):
     personagens = get_object_or_404(Personagem, id=5)
-    return render(request, 'home/Finn.html', {
+    return render(request, 'home/Princesadefogo.html', {
         'personagens': personagens
     })
 
 
 def BMO(request):
     personagens = get_object_or_404(Personagem, id=9)
-    return render(request, 'home/Finn.html', {
+    return render(request, 'home/BMO.html', {
         'personagens': personagens
     })
 
 
 def Ladyiris(request):
     personagens = get_object_or_404(Personagem, id=8)
-    return render(request, 'home/Finn.html', {
+    return render(request, 'home/Ladyiris.html', {
         'personagens': personagens
     })
 
 
 def Reigelado(request):
     personagens = get_object_or_404(Personagem, id=7)
-    return render(request, 'home/Finn.html', {
+    return render(request, 'home/Reigelado.html', {
         'personagens': personagens
     })
 
 
 def Lich(request):
     personagens = get_object_or_404(Personagem, id=6)
-    return render(request, 'home/Finn.html', {
+    return render(request, 'home/Lich.html', {
         'personagens': personagens
     })
 
