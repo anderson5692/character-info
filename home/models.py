@@ -8,7 +8,7 @@ class Personagem(models.Model):
     Gênero = models.CharField(max_length=255)
     Ocupação = models.CharField(max_length=255)
     Descrição = models.TextField(max_length=999)
-    Foto = models.FileField(upload_to= 'static', default= 'foto')
+    Foto = models.FileField(upload_to='static', default='foto')
 
     def __str__(self):
         return self.Nome
